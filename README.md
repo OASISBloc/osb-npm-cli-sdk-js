@@ -41,7 +41,7 @@ const osbClient = new OASIS_CLI(config)
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| config.chainAccessPoint | string | Blockchain API node endpoint (ex: 'http://18.141.2.126:1387') |
+| config.chainAccessPoint | string | Blockchain API node endpoint (ex: 'http://18.141.2.126:13876') |
 | config.chainId | string | Blockchain id (ex: '2cfbbc1ce6f7c4a48cfbb6de6ad00c55ea21401fbcf983a6f553fb4d8923d695') |
 | config.dataTradeContractName | string | Data trade contract name (ex: 'datatrade13') |
 | config.privateKey | string | User's private key |
