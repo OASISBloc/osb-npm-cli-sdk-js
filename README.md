@@ -24,7 +24,7 @@ import OASIS_CLI from 'osb-cli-sdk'
 
 ### Constructor
 
-Creates an instance of oasisbloc client
+Creating an instance of oasisbloc client
 
 ```javascript
 const config = {
@@ -57,7 +57,7 @@ osbClient.setAuthForContract()
 
 ### registerData
 
-Registers a data to oasisbloc with encryption and fragmentation of data, and uploads data to data keeper's IDFS nodes
+Registering a data to oasisbloc with encryption and fragmentation of data, and uploading data to data keeper's IDFS nodes
 
 ```javascript
 osbClient.registerData(data, datatypename, detailFields, price, period, decryptKeyList)
@@ -84,7 +84,7 @@ osbClient.registerData(data, datatypename, detailFields, price, period, decryptK
 
 ### buyData
 
-Gets a data by buying and downloading encrypted data fragments
+Getting a data access authority
 
 ```javascript
 osbClient.buyData(dataid, buyerPrivateKey)
@@ -101,8 +101,28 @@ osbClient.buyData(dataid, buyerPrivateKey)
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| data | Buffer | The purchased data |
 | txResultBuyData | object | Transaction result data of buydata action |
 | dataBuyHistoryInfo | object | Data buy information |
 
+### requestData
+
+Downloading encrypted data fragments
+
+```javascript
+osbClient.requestData(dataid, buyid, buyerPrivateKey)
+```
+
+#### Parameters
+
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| dataid | integer | Data registration id |
+| buyid | integer | Data purchase id |
+| buyerPrivateKey | string | Buyer private key for authentication of data access. It is not the private key of the user account |
+
+#### Return values
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| data | Buffer | The purchased data |
 
