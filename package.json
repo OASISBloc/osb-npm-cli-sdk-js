@@ -1,0 +1,38 @@
+{
+  "name": "osb-cli-sdk",
+  "version": "0.0.10",
+  "description": "OASISBloc Client SDK connecting blockchain, IDFS network to share data",
+  "keywords": [
+    "oasisbloc",
+    "osb"
+  ],
+  "homepage": "https://oasisbloc.io",
+  "bugs": {
+    "url": "https://github.com/OASISBloc/sdk-js/issues",
+    "email": "support@oasisbloc.io"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Renov Jung",
+    "email": "chjung@doublechain.co.kr"
+  },
+  "main": "dist/oasisbloc_cli_sdk.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OASISBloc/sdk-js.git"
+  },
+  "dependencies": {
+    "eosjs": "^16.0.9",
+    "eosjs-ecc": "^4.0.4",
+    "crypto": "^1.0.1",
+    "eccrypto": "^1.1.1",
+    "bs58": "^4.0.1",
+    "axios": "^0.19.0",
+    "node-fetch": "^1.7.3"
+  },
+  "engines": {
+    "node": "^8.10.0",
+    "npm" : "^3.5.2"
+  }
+}
+
